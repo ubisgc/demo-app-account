@@ -32,6 +32,6 @@ jobs:
       with:
         dockerfile: ./src/main/docker/Dockerfile.jvm
         image: sgchub/demo-app-account
-        registry: hub.docker.com
-        username: ${{ secrets.dockerhub_userid }}
-        password: ${{ secrets.dockerhub_password }}
+        registry: registry.hub.docker.com
+        username: ${{ secrets.DOCKERHUB_USERID }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
